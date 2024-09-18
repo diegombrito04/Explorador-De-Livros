@@ -2,6 +2,10 @@
 
 Este projeto é uma aplicação Angular que permite explorar, buscar e gerenciar uma coleção de livros. Com funcionalidades para favoritar livros, adicionar notas e avaliações, e muito mais, esta aplicação foi desenvolvida para facilitar a exploração de livros e o gerenciamento de favoritos.
 
+## Status do Projeto
+
+🚧 **Este projeto está em andamento.** Algumas funcionalidades podem estar incompletas ou em desenvolvimento. Fique à vontade para contribuir ou acompanhar as atualizações.
+
 ## Requisitos
 
 Certifique-se de que você tem o Node.js e o Angular CLI instalados. Você pode instalar o Angular CLI globalmente com:
