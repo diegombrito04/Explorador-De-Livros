@@ -1,27 +1,54 @@
-# Library
+# Explorador de Livros
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
+Este projeto é uma aplicação Angular que permite explorar, buscar e gerenciar uma coleção de livros. Com funcionalidades para favoritar livros, adicionar notas e avaliações, e muito mais, esta aplicação foi desenvolvida para facilitar a exploração de livros e o gerenciamento de favoritos.
 
-## Development server
+## Requisitos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Certifique-se de que você tem o Node.js e o Angular CLI instalados. Você pode instalar o Angular CLI globalmente com:
 
-## Code scaffolding
+```bash
+npm install -g @angular/cli
+```
+# Instalação
+Clone o repositório e instale as dependências:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+git clone https://github.com/username/repository.git
+cd repository
+npm install
+```
+# Servidor de Desenvolvimento
+Execute ng serve para iniciar o servidor de desenvolvimento. Navegue para http://localhost:4200/. A aplicação será recarregada automaticamente sempre que você modificar os arquivos de origem.
 
-## Build
+```bash
+ng serve
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Geração de Código
+Use ng generate component nome-do-componente para gerar um novo componente. Também é possível gerar diretivas, pipes, serviços, classes, guards, interfaces, enums e módulos com os seguintes comandos:
 
-## Running unit tests
+```bash
+ng generate directive|pipe|service|class|guard|interface|enum|module
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Build
+Execute ng build para construir o projeto. Os artefatos de build serão armazenados no diretório dist/.
 
-## Running end-to-end tests
+```bash
+ng build
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# Testes Unitários
+Execute ng test para executar os testes unitários usando o Karma.
 
-## Further help
+```bash
+ng test
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+# Testes End-to-End
+Execute ng e2e para executar os testes end-to-end. Para usar este comando, você deve primeiro adicionar um pacote que implemente as capacidades de teste end-to-end.
+
+```bash
+ng e2e
+```
+
