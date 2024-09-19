@@ -55,6 +55,51 @@
           />
         </svg>
       </button>
+      <button type="button" class="btn btn-primary" (click)="editBook(book)">Avaliar</button>
     </div>
   </div>
 </div>
+<div class="modal" tabindex="-1" *ngIf="isModalOpen">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Avaliar Livro</h5>
+        <button type="button" class="btn-close" (click)="closeModal()">×</button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <!-- Avaliação por estrelas -->
+          <div class="mb-3">
+            <label class="form-label">Nota do Livro (1 a 5 estrelas)</label>
+            <ul class="avaliacao">
+              <li class="star-icon" [class.ativo]="currentRating >= 1" (click)="setRating(1)" data-avaliacao="1"></li>
+              <li class="star-icon" [class.ativo]="currentRating >= 2" (click)="setRating(2)" data-avaliacao="2"></li>
+              <li class="star-icon" [class.ativo]="currentRating >= 3" (click)="setRating(3)" data-avaliacao="3"></li>
+              <li class="star-icon" [class.ativo]="currentRating >= 4" (click)="setRating(4)" data-avaliacao="4"></li>
+              <li class="star-icon" [class.ativo]="currentRating >= 5" (click)="setRating(5)" data-avaliacao="5"></li>
+            </ul>
+          </div>
+
+          <!-- Avaliação em texto -->
+          <div class="mb-3">
+            <label for="evaluation" class="form-label">Avaliação</label>
+            <input type="text" class="form-control" id="evaluation" [(ngModel)]="book.evaluation">
+          </div>
+
+          <!-- Tags -->
+          <div class="mb-3">
+            <label for="tags" class="form-label">Tags</label>
+            <textarea class="form-control" id="tags" rows="2" [(ngModel)]="book.tags"></textarea>
+            <small class="form-text text-muted">Insira as tags separadas por vírgulas (ex: aventura, drama, ficção).</small>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="closeModal()">Cancelar</button>
+        <button type="button" class="btn btn-primary" (click)="saveBookChanges()">Salvar Alterações</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+

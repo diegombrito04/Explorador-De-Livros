@@ -55,4 +55,15 @@ export class BooksService {
     localStorage.setItem('favorites', JSON.stringify(filterData));
     return filterData;
   }
+
+  updateFavorite(updatedBook: Book) {
+    const favorites = this.getFavorite();
+    const index = favorites.findIndex(book => book.id === updatedBook.id);
+  
+    if (index !== -1) {
+      favorites[index] = { ...updatedBook }; // Atualiza o livro com as novas informações
+      localStorage.setItem('favorites', JSON.stringify(favorites)); // Persiste no localStorage
+    }
+  }
+  
 }
