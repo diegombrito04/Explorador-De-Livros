@@ -1,27 +1,64 @@
-# Library
+<h1 align="center">Explorador de Livros 📚</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
+<p align="center">
+  <strong>Aplicação para explorar, favoritar e avaliar livros de maneira prática e intuitiva.</strong>
+</p>
 
-## Development server
+<hr />
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<h2>📖 Sobre o Projeto</h2>
+<p>
+  O <strong>Explorador de Livros</strong> é uma aplicação que permite que os usuários pesquisem por livros, vejam detalhes, adicionem aos favoritos e façam avaliações. O projeto é construído com <strong>Angular</strong> e utiliza a <a href="https://developers.google.com/books" target="_blank">API do Google Books</a> para obter informações sobre livros em tempo real.
+</p>
 
-## Code scaffolding
+<h2>🚀 Funcionalidades</h2>
+<ul>
+  <li>Pesquisar livros por título ou autor</li>
+  <li>Favoritar livros</li>
+  <li>Avaliar livros com notas e adicionar tags</li>
+  <li>Visualizar e editar as avaliações</li>
+</ul>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<h2>🛠 Tecnologias Utilizadas</h2>
+<ul>
+  <li><strong>Angular</strong> - Framework para construção do front-end</li>
+  <li><strong>TypeScript</strong> - Linguagem para desenvolvimento seguro e escalável</li>
+  <li><strong>Google Books API</strong> - Para a pesquisa e recuperação de informações de livros</li>
+  <li><strong>HTML5 e CSS3</strong> - Para a construção da interface do usuário</li>
+  <li><strong>LocalStorage</strong> - Para armazenamento local dos livros favoritos e avaliações</li>
+</ul>
 
-## Build
+<h2>⚙️ Como Instalar e Executar o Projeto</h2>
+<ol>
+  <li>Clone o repositório: <pre><code>git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git</code></pre></li>
+  <li>Entre no diretório do projeto: <pre><code>cd Explorador-De-Livros</code></pre></li>
+  <li>Instale as dependências: <pre><code>npm install</code></pre></li>
+  <li>Inicie o servidor de desenvolvimento: <pre><code>ng serve</code></pre></li>
+  <li>Acesse a aplicação no navegador: <pre><code>http://localhost:4200</code></pre></li>
+</ol>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<h2>📂 Estrutura do Projeto</h2>
+<ul>
+  <li><strong>src/app/components/</strong> - Componentes principais da aplicação</li>
+  <li><strong>src/app/services/</strong> - Serviços que gerenciam os dados dos livros e favoritos</li>
+  <li><strong>src/assets/</strong> - Arquivos estáticos como imagens e ícones</li>
+</ul>
 
-## Running unit tests
+<h2>🤝 Contribuição</h2>
+<p>
+  Fique à vontade para contribuir com este projeto! Siga as etapas abaixo:
+</p>
+<ol>
+  <li>Faça um fork do repositório</li>
+  <li>Crie uma branch com a sua feature: <pre><code>git checkout -b minha-feature</code></pre></li>
+  <li>Commit suas mudanças: <pre><code>git commit -m 'feat: Minha nova feature'</code></pre></li>
+  <li>Envie para o repositório remoto: <pre><code>git push origin minha-feature</code></pre></li>
+  <li>Abra um Pull Request</li>
+</ol>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<h2>📝 Licença</h2>
+<p>
+  Este projeto está sob a licença <strong>MIT</strong>. Consulte o arquivo <code>LICENSE</code> para mais detalhes.
+</p>
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+<hr />
